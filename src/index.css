@@ -17,30 +17,30 @@
     --card-foreground: 225 15% 20%;
     
     /* Primary Brand Colors */
-    --primary: 270 95% 55%;
+    --primary: 220 85% 25%;
     --primary-foreground: 0 0% 100%;
-    --primary-soft: 270 95% 95%;
+    --primary-soft: 220 85% 95%;
     
     /* Secondary Colors */
-    --secondary: 210 20% 95%;
-    --secondary-foreground: 225 15% 25%;
+    --secondary: 45 30% 85%;
+    --secondary-foreground: 220 85% 25%;
     
     /* Neutral System */
-    --muted: 210 20% 96%;
-    --muted-foreground: 225 10% 55%;
+    --muted: 45 25% 90%;
+    --muted-foreground: 220 25% 45%;
     
     /* Accent Colors */
-    --accent: 270 95% 55%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 45 40% 75%;
+    --accent-foreground: 220 85% 25%;
     
     /* UI Elements */
-    --border: 220 15% 90%;
-    --input: 220 15% 96%;
-    --ring: 270 95% 55%;
+    --border: 45 20% 80%;
+    --input: 45 25% 92%;
+    --ring: 220 85% 25%;
     
     /* Interactive States */
-    --hover: 270 95% 60%;
-    --active: 270 95% 50%;
+    --hover: 220 85% 30%;
+    --active: 220 85% 20%;
     
     /* Shadows */
     --shadow-soft: 0 1px 3px hsl(225 15% 20% / 0.1);
@@ -48,8 +48,8 @@
     --shadow-large: 0 10px 25px hsl(225 15% 20% / 0.15);
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(270 95% 55%), hsl(270 95% 65%));
-    --gradient-soft: linear-gradient(135deg, hsl(270 95% 95%), hsl(210 20% 98%));
+    --gradient-primary: linear-gradient(135deg, hsl(220 85% 25%), hsl(220 85% 35%));
+    --gradient-soft: linear-gradient(135deg, hsl(45 40% 95%), hsl(45 25% 98%));
     
     /* Spacing & Layout */
     --radius: 0.75rem;
