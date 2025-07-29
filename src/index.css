@@ -1,42 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Professional Portfolio Design System */
 
 @layer base {
   :root {
+    /* Core Colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --foreground: 225 15% 20%;
+    
+    /* Card System */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --card-foreground: 225 15% 20%;
+    
+    /* Primary Brand Colors */
+    --primary: 192 95% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-soft: 192 95% 95%;
+    
+    /* Secondary Colors */
+    --secondary: 210 20% 95%;
+    --secondary-foreground: 225 15% 25%;
+    
+    /* Neutral System */
+    --muted: 210 20% 96%;
+    --muted-foreground: 225 10% 55%;
+    
+    /* Accent Colors */
+    --accent: 192 95% 45%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* UI Elements */
+    --border: 220 15% 90%;
+    --input: 220 15% 96%;
+    --ring: 192 95% 45%;
+    
+    /* Interactive States */
+    --hover: 192 95% 50%;
+    --active: 192 95% 40%;
+    
+    /* Shadows */
+    --shadow-soft: 0 1px 3px hsl(225 15% 20% / 0.1);
+    --shadow-medium: 0 4px 6px hsl(225 15% 20% / 0.1);
+    --shadow-large: 0 10px 25px hsl(225 15% 20% / 0.15);
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(192 95% 45%), hsl(192 95% 55%));
+    --gradient-soft: linear-gradient(135deg, hsl(192 95% 95%), hsl(210 20% 98%));
+    
+    /* Spacing & Layout */
+    --radius: 0.75rem;
+    --section-padding: 5rem;
+    
+    /* Typography */
+    --font-heading: 'Inter', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +121,103 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  /* Portfolio Components */
+  .section-padding {
+    @apply py-20 px-6 md:px-8 lg:px-12;
+  }
+  
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .card-elevated {
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    box-shadow: var(--shadow-medium);
+    @apply rounded-xl;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-large hover:-translate-y-1;
+  }
+  
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-soft {
+    background: var(--gradient-soft);
+  }
+  
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .skill-bar {
+    @apply relative bg-secondary rounded-full h-2 overflow-hidden;
+  }
+  
+  .skill-progress {
+    @apply absolute top-0 left-0 h-full gradient-primary transition-all duration-1000 ease-out;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
