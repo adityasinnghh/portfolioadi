@@ -17,9 +17,9 @@
     --card-foreground: 225 15% 20%;
     
     /* Primary Brand Colors */
-    --primary: 192 95% 45%;
+    --primary: 270 95% 55%;
     --primary-foreground: 0 0% 100%;
-    --primary-soft: 192 95% 95%;
+    --primary-soft: 270 95% 95%;
     
     /* Secondary Colors */
     --secondary: 210 20% 95%;
@@ -30,17 +30,17 @@
     --muted-foreground: 225 10% 55%;
     
     /* Accent Colors */
-    --accent: 192 95% 45%;
+    --accent: 270 95% 55%;
     --accent-foreground: 0 0% 100%;
     
     /* UI Elements */
     --border: 220 15% 90%;
     --input: 220 15% 96%;
-    --ring: 192 95% 45%;
+    --ring: 270 95% 55%;
     
     /* Interactive States */
-    --hover: 192 95% 50%;
-    --active: 192 95% 40%;
+    --hover: 270 95% 60%;
+    --active: 270 95% 50%;
     
     /* Shadows */
     --shadow-soft: 0 1px 3px hsl(225 15% 20% / 0.1);
@@ -48,8 +48,8 @@
     --shadow-large: 0 10px 25px hsl(225 15% 20% / 0.15);
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(192 95% 45%), hsl(192 95% 55%));
-    --gradient-soft: linear-gradient(135deg, hsl(192 95% 95%), hsl(210 20% 98%));
+    --gradient-primary: linear-gradient(135deg, hsl(270 95% 55%), hsl(270 95% 65%));
+    --gradient-soft: linear-gradient(135deg, hsl(270 95% 95%), hsl(210 20% 98%));
     
     /* Spacing & Layout */
     --radius: 0.75rem;
