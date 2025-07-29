@@ -1,5 +1,6 @@
 import { ArrowRight, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profileImage from "@/assets/aditya-profile.png";
 
 const Hero = () => {
   return (
@@ -47,15 +48,12 @@ const Hero = () => {
           {/* Profile Picture Placeholder */}
           <div className="flex justify-center lg:justify-end animate-scale-in">
             <div className="relative">
-              <div className="w-80 h-80 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-4 border-primary/20 flex items-center justify-center shadow-large">
-                <div className="w-72 h-72 rounded-full bg-muted flex items-center justify-center">
-                  <div className="text-center space-y-2">
-                    <div className="w-20 h-20 rounded-full bg-primary/20 mx-auto flex items-center justify-center">
-                      <span className="text-3xl font-bold text-primary">AS</span>
-                    </div>
-                    <p className="text-sm text-muted-foreground">Profile Picture</p>
-                  </div>
-                </div>
+              <div className="w-80 h-80 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-4 border-primary/20 flex items-center justify-center shadow-large overflow-hidden">
+                <img 
+                  src={profileImage} 
+                  alt="Aditya Singh - Front-End Developer" 
+                  className="w-72 h-72 rounded-full object-cover"
+                />
               </div>
               {/* Decorative elements */}
               <div className="absolute -top-4 -right-4 w-8 h-8 rounded-full gradient-primary animate-pulse"></div>
