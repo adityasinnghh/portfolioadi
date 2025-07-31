@@ -98,18 +98,6 @@ const Skills = () => {
               </div>
             </div>
 
-            {/* Learning Goals */}
-            <div className="card-elevated p-8">
-              <h3 className="text-xl font-semibold mb-6 text-gradient">Currently Learning</h3>
-              <div className="space-y-3">
-                {["TypeScript", "Node.js", "GraphQL", "Docker"].map((item) => (
-                  <div key={item} className="flex items-center gap-3">
-                    <div className="w-2 h-2 rounded-full gradient-primary"></div>
-                    <span className="text-muted-foreground">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </div>

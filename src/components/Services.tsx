@@ -20,12 +20,6 @@ const Services = () => {
       description: "Ensuring your website looks and works perfectly across all devices and screen sizes.",
       features: ["Mobile-First Design", "Cross-Browser Support", "Performance Optimization", "Accessibility"]
     },
-    {
-      icon: Zap,
-      title: "Performance Optimization",
-      description: "Optimizing websites for speed, SEO, and user experience with modern best practices.",
-      features: ["Speed Optimization", "SEO Implementation", "Code Splitting", "Bundle Optimization"]
-    }
   ];
 
   return (

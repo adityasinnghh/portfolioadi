@@ -15,8 +15,8 @@ const Portfolio = () => {
       "Mobile-optimized design"
     ],
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d",
-    liveUrl: "#",
-    githubUrl: "#"
+    liveUrl: "https://adityasinnghh.github.io/Amazon-web-page1/index.html",
+    githubUrl: "https://github.com/adityasinnghh/Amazon-web-page1"
   };
 
   const additionalProjects = [
@@ -111,13 +111,17 @@ const Portfolio = () => {
                 
                 {/* Action Buttons */}
                 <div className="flex gap-4 pt-4">
-                  <Button className="gradient-primary">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Live Demo
+                  <Button asChild className="gradient-primary">
+                    <a href={featuredProject.liveUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Live Demo
+                    </a>
                   </Button>
-                  <Button variant="outline" className="border-primary text-primary hover:bg-primary-soft">
-                    <Github className="w-4 h-4 mr-2" />
-                    View Code
+                  <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary-soft">
+                    <a href={featuredProject.githubUrl} target="_blank" rel="noopener noreferrer">
+                      <Github className="w-4 h-4 mr-2" />
+                      View Code
+                    </a>
                   </Button>
                 </div>
               </div>
@@ -125,59 +129,6 @@ const Portfolio = () => {
           </div>
         </div>
 
-        {/* Additional Projects */}
-        <div>
-          <h3 className="text-2xl font-bold text-center mb-12">More Projects</h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            {additionalProjects.map((project, index) => (
-              <div 
-                key={project.title}
-                className="card-elevated card-hover overflow-hidden animate-slide-up"
-                style={{ animationDelay: `${index * 150}ms` }}
-              >
-                <div className="aspect-video bg-muted flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-12 h-12 rounded-full bg-primary/20 mx-auto mb-2 flex items-center justify-center">
-                      <Code className="w-6 h-6 text-primary" />
-                    </div>
-                    <p className="text-sm text-muted-foreground">Project Preview</p>
-                  </div>
-                </div>
-                
-                <div className="p-6 space-y-4">
-                  <div>
-                    <h4 className="text-lg font-semibold mb-2">{project.title}</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {project.description}
-                    </p>
-                  </div>
-                  
-                  <div className="flex flex-wrap gap-2">
-                    {project.tech.map((tech) => (
-                      <span 
-                        key={tech}
-                        className="px-2 py-1 bg-secondary text-xs font-medium rounded"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                  
-                  <div className="flex gap-2 pt-2">
-                    <Button size="sm" variant="outline" className="flex-1 text-xs">
-                      <ExternalLink className="w-3 h-3 mr-1" />
-                      Demo
-                    </Button>
-                    <Button size="sm" variant="outline" className="flex-1 text-xs">
-                      <Github className="w-3 h-3 mr-1" />
-                      Code
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

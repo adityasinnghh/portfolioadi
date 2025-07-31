@@ -136,11 +136,15 @@ const Contact = () => {
                 Let's discuss your ideas and make them reality!
               </p>
               <div className="flex flex-wrap gap-3">
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary-soft">
-                  Download Resume
+                <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary-soft">
+                  <a href="https://drive.google.com/file/d/1q6Wwvf68kbGCVK-lsN52jeVju3w9ucKE/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    Download Resume
+                  </a>
                 </Button>
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary-soft">
-                  View GitHub
+                <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary-soft">
+                  <a href="https://github.com/adityasinnghh" target="_blank" rel="noopener noreferrer">
+                    View GitHub
+                  </a>
                 </Button>
               </div>
             </div>
