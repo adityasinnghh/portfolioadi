@@ -89,21 +89,21 @@ const Hero = () => {
           <div className="flex justify-center lg:justify-end animate-scale-in">
             <div className="relative group">
               {/* Main profile container */}
-              <div className="relative w-96 h-96 rounded-3xl bg-gradient-to-br from-primary/20 via-primary/10 to-primary/5 border-2 border-primary/20 shadow-2xl overflow-hidden backdrop-blur-sm">
+              <div className="relative w-96 h-96 rounded-full bg-gradient-to-br from-primary/20 via-primary/10 to-primary/5 border-2 border-primary/20 shadow-2xl overflow-hidden backdrop-blur-sm">
                 <img 
                   src={profileImage} 
                   alt="Aditya Singh - Front-End Developer" 
-                  className="w-full h-full object-cover rounded-3xl transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover rounded-full transition-transform duration-700 group-hover:scale-105"
                 />
                 
                 {/* Overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent opacity-60 rounded-3xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent opacity-60 rounded-full"></div>
                 
                 {/* Floating elements */}
-                <div className="absolute -top-4 -right-4 w-12 h-12 rounded-2xl gradient-primary flex items-center justify-center shadow-lg animate-pulse">
+                <div className="absolute -top-4 -right-4 w-12 h-12 rounded-full gradient-primary flex items-center justify-center shadow-lg animate-pulse">
                   <Code className="h-6 w-6 text-white" />
                 </div>
-                <div className="absolute -bottom-6 -left-6 w-16 h-16 rounded-2xl bg-accent/80 backdrop-blur-sm flex items-center justify-center shadow-lg animate-pulse delay-300">
+                <div className="absolute -bottom-6 -left-6 w-16 h-16 rounded-full bg-accent/80 backdrop-blur-sm flex items-center justify-center shadow-lg animate-pulse delay-300">
                   <Palette className="h-8 w-8 text-primary" />
                 </div>
                 <div className="absolute top-6 -left-4 w-8 h-8 rounded-full bg-primary/40 animate-pulse delay-500"></div>
@@ -111,8 +111,8 @@ const Hero = () => {
               </div>
               
               {/* Decorative rings */}
-              <div className="absolute inset-0 rounded-3xl border-2 border-primary/10 scale-110 animate-pulse delay-1000"></div>
-              <div className="absolute inset-0 rounded-3xl border border-primary/5 scale-125 animate-pulse delay-1200"></div>
+              <div className="absolute inset-0 rounded-full border-2 border-primary/10 scale-110 animate-pulse delay-1000"></div>
+              <div className="absolute inset-0 rounded-full border border-primary/5 scale-125 animate-pulse delay-1200"></div>
             </div>
           </div>
         </div>
