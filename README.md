@@ -24,4 +24,5 @@ Check out my live portfolio here:
 
 ---
 
+---
 > Designed to be clean, professional, and fully responsive — so it looks great on any device.
