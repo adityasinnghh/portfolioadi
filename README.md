@@ -4,7 +4,7 @@ A modern, responsive personal portfolio showcasing my profile, resume, programmi
 
 ---
 
-## 📄 Sections
+## 📄 Sections  
 - **About Me** – Brief introduction and professional background  
 - **Projects** – Highlights of my best work with descriptions and links  
 - **Skills** – Languages, tools, and frameworks I specialize in  
