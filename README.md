@@ -1,4 +1,4 @@
-# 🌐 Personal Portfolio
+ # 🌐 Personal Portfolio
 
 A modern, responsive personal portfolio showcasing my profile, resume, programming languages, and projects — built with **Lovable**.
 
@@ -6,7 +6,7 @@ A modern, responsive personal portfolio showcasing my profile, resume, programmi
 
 ## 📄 Sections  
 - **About Me** – Brief introduction and professional background  
-- **Projects** – Highlights of my best work with descriptions and links  
+- **Projects ** – Highlights of my best work with descriptions and links  
 - **Skills** – Languages, tools, and frameworks I specialize in  
 - **Contact** – Easy ways to reach me  
 
